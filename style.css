@@ -1,0 +1,207 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body{
+  text-transform: capitalize;
+  background-color: white;
+}
+a{
+  text-decoration: none;
+  color:rgb(58, 53, 53);
+}
+li{
+  list-style: none;
+}
+/* 
+Primary: #0D1B2A (Dark Navy)
+
+Secondary: #1B263B (Deep Gray Blue)
+
+Accent: #415A77 (Slate Blue)
+
+Light: #E0E1DD (Off-white)
+
+Highlight: #778DA9 (Cool Gray)
+
+ */
+.wrapper{
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+}
+header{
+  background-color: white;
+  padding: 5px 10px;
+  border-bottom: 1px solid gray;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  font-weight: 500;
+ 
+}
+nav ul{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+li ,ul{
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  position: relative;
+}
+.drop1 a{
+display: block;
+padding:5px 10px ;
+color: #000;
+}
+.drop1{
+  display:none ;
+  position: absolute;
+  background-color: rgb(42, 174, 186);
+  font-weight: 400;
+  top: 100%;
+  left: 0%;
+  width: 120px;
+  box-shadow: 2px 4px 8px rgb(174, 170, 170);
+  
+}
+.drop1 a:hover{
+  background-color: white;
+}
+li:hover .drop1{
+  display: block;
+}
+.logo img{
+  width: 50px;
+  border-radius: 50%;
+}
+.card{
+  display: flex;
+  gap: 7px;
+
+}
+.card button{
+  padding: 5px;
+  background-color: rgb(219, 213, 213);
+  border-radius: 3px;
+  transition: all 1s ease;
+}
+.card button:hover{
+  transform: scale(1.1);
+}
+.mobnav{
+  border: 2px solid gray;
+  height: 30px;
+  width: 30px;
+ padding: 5px;
+ 
+  
+}
+.dots{
+  background-color: #000;
+  height: 3px;
+  width: 100%;
+  margin-bottom: 3px;
+ 
+}
+ @media (max-width:768px) {
+  nav{
+    display: none;
+  }
+  .footer{
+    flex-wrap: wrap;
+    
+  }
+  .aboutfooter{
+    padding-left: 15px;
+  }
+  .contactfooter{
+    padding-left: 15px;
+  }
+  .linkfooter{
+   padding-left: 15px !important;
+
+  }
+ }
+
+ @media (min-width:768px) {
+  .mobnav{
+    display: none;
+  }
+ }
+ @media (width:768px) {
+  nav{
+    display: block;
+  }
+ }
+ /* footer css */
+ .main{
+  height: 50vh;
+  background-color: aquamarine;
+  text-align: center;
+  font-weight: 700;
+  padding: 50px 20px;
+  
+ }
+ footer{
+  background-color: white;
+
+  
+  
+ }
+ .footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 4px;
+ }
+ .aboutfooter{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ }
+ .parfooter{
+  text-align: left;
+cursor: pointer;
+padding: 3px;
+ }
+ .footernav{
+ display: flex;
+ flex-direction: column;
+ gap: 7px;
+ text-align: left;
+ transition: all 1s ease;
+ }
+ .footernav a:hover{
+ color: aquamarine;
+ }
+ .linkfooter h3{
+  margin-bottom: 4px;
+ }
+ .linkfooter{
+ padding: 7px;
+ }
+ 
+ .contactbox{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   padding: 5px;
+   text-align: left;
+ }
+ .contactfooter{
+  text-align: left;
+ }
+ .copyfooter{
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 10px;
+ }
